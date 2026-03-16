@@ -116,7 +116,7 @@ func runOllama(for userInput: String, attachments: [Attachment] = []) async {
 
 ## License
 
-Copyright © 2025 **Mohamed Youssef El Sayed Hassaan**
+Copyright © 2026 **Mohamed Youssef El Sayed Hassaan**
 Nationality: Egyptian · DOB: 22/07/1997
 
 All Rights Reserved. This software and its source code are the exclusive property of Mohamed Youssef El Sayed Hassaan. No part of this software may be reproduced, distributed, modified, sublicensed, or used in any form without express written permission from the owner.
