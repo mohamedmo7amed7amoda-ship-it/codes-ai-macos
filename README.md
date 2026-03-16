@@ -21,6 +21,7 @@ Codes is a personal macOS coding assistant that talks to a **local Ollama model*
 - 🌐 **Web Search** — DuckDuckGo-powered research injected into AI context
 - 🖼️ **Vision support** — attach screenshots of Xcode errors for analysis
 - ↩️ **Undo / Redo** — full snapshot history for every AI file edit
+- ⚡ **Smart model routing** — auto-selects 1.5b, 7b, or vision model based on query complexity
 
 ---
 
@@ -97,7 +98,8 @@ func runOllama(for userInput: String, attachments: [Attachment] = []) async {
 | Layer | Technology |
 |---|---|
 | UI | SwiftUI 5, NavigationSplitView, async/await |
-| AI | Ollama (local) — qwen2.5-coder:7b, llava vision |
+| AI Models | qwen2.5-coder:7b-instruct-q4_0 · qwen2.5-coder:1.5b-instruct-q4_0 · llava (vision) |
+| Model Routing | Auto-switch based on input type — 1.5b for simple queries, 7b for complex, llava for images |
 | Storage | Actor-based JSON persistence |
 | File I/O | Non-sandboxed, security-scoped bookmarks |
 | Search | DuckDuckGo · Brave · Bing · Wikipedia |
