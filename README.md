@@ -22,6 +22,8 @@ Codes is a personal macOS coding assistant that talks to a **local Ollama model*
 - 🖼️ **Vision support** — attach screenshots of Xcode errors for analysis
 - ↩️ **Undo / Redo** — full snapshot history for every AI file edit
 - ⚡ **Smart model routing** — auto-selects 1.5b, 7b, or vision model based on query complexity
+- 📡 **Fully offline** — runs 100% on-device, no internet required, no data leaves your Mac
+- 🧠 **Self-learning** — builds a personal memory from every conversation, gets smarter over time
 
 ---
 
@@ -47,10 +49,12 @@ SwiftUI macOS App
 │   └── KnowledgeRouter   — memory + dialect + emotion few-shot
 │
 └── Local Services
-    ├── FolderAccessService  — non-sandboxed file I/O
-    ├── FileCommandService   — parses ```create / ```edit blocks
-    ├── LinguisticMemory     — learns from conversation history
-    └── WebSearchService     — multi-engine deep search
+│   ├── FolderAccessService  — non-sandboxed file I/O
+│   ├── FileCommandService   — parses ```create / ```edit blocks
+│   ├── LinguisticMemory     — learns from conversation history
+│   └── WebSearchService     — multi-engine deep search
+├── LinguisticMemory
+    ├── learns from every conversation, persists knowledge locally
 ```
 
 ---
@@ -112,7 +116,8 @@ func runOllama(for userInput: String, attachments: [Attachment] = []) async {
 - **Privacy** — code never leaves your machine
 - **Speed** — no network latency for token streaming
 - **Cost** — zero API fees
-- **Offline** — works without internet
+- **Fully offline** — runs 100% on-device, zero network requests, works on a plane.
+- **Self-improving** — learns your coding style and preferences locally, no data shared
 
 ---
 
