@@ -26,8 +26,8 @@ Codes is a personal macOS coding assistant that talks to a **local Ollama model*
 
 ## Screenshots
 
-![Code View](screenshots/code-view.png)
-![Chat View](screenshots/chat-view.png)
+![Code View](code-view.png)
+![Chat View](chat-view.png)
 
 ---
 
