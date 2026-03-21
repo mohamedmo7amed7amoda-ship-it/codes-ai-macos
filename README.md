@@ -33,7 +33,7 @@ Codes is a personal macOS AI coding assistant powered by local Ollama models. Ev
 
 | Chat | Split Screen |
 |---|---|
-| ![Chat View](chat-view.png) | ![Code View](code-view.png) |
+| ![Chat View]() | ![Code View]() |
 
 ---
 
